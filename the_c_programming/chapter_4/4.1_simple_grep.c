@@ -51,8 +51,7 @@ int simple_grep(char pattern[]) {
             printf("Row: %d: %s", row, line);
             found++;
         }
-
-        ++row;
+        row++;
     }
     return found;
 }
