@@ -59,11 +59,10 @@ int simple_grep(char pattern[]) {
 
 int main(int argc, char *argv[]) {
     if (argc > 1) {
-        int output = simple_grep(argv[1]);
-        //    if (output == 1){
-        //        printf("Matched successfully\n");
-        //
-        //    }
+        int n_of_match = simple_grep(argv[1]);
+            if (n_of_match > 0){
+                printf("Total rows match: %d\n", n_of_match);
+            }
     }
     return 0;
 }
