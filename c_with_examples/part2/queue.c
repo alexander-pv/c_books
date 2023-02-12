@@ -71,7 +71,7 @@ void display() {
 
 int main(void) {
 
-    char s[MAX_TO_READ];
+    char command[MAX_TO_READ];
     register int j;
 
     //Init array with empty pointers
@@ -81,9 +81,9 @@ int main(void) {
 
     for (;;) {
         printf("I - insert, D - display, R - remove, Q - exit: ");
-        fgets(s, MAX_TO_READ, stdin);
-        *s = toupper(*s);
-        switch (*s) {
+        fgets(command, MAX_TO_READ, stdin);
+        *command = toupper(*command);
+        switch (*command) {
             case 'I':
                 new_el();
                 break;
